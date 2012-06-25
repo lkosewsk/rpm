@@ -13,7 +13,7 @@ module NewRelic
       def log
         if !@log
           l = Logger.new(STDOUT)
-          l.level = Logger::INFO          
+          l.level = Logger::WARN
           return l
         end
         @log
